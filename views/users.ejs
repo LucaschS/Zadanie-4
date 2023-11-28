@@ -1,0 +1,11 @@
+<%- include('includes/head.ejs') %>
+<body>
+  <%- include('includes/navigation.ejs') %>
+  <main>
+    <ul>
+      <% for (let user of users) { %>
+      <li><%= user.name %></li>
+      <% } %>
+    </ul>
+  </main>
+</body>
